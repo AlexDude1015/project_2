@@ -1,13 +1,17 @@
 ### Grade Calculator by Alexander Li
 
 ---
+#### Video link:
+https://drive.google.com/file/d/1bvUmRtAR05Iv2j-i65tP8AOoiC4yfSfA/view?usp=share_link
+
+---
+
 
 #### Summary:
 Have you ever wondered what you must do to get the 
 desired grade in a class? With this program, students can 
 get a clear answer.  This program calculates the minimum 
-average score of all future and ungraded assignments to get
-the desired grade.
+average score of all future and ungraded assignments to Ace CS25.
 
 ---
 
@@ -37,18 +41,22 @@ A main menu allows the user to interface with the
 different options.
 ![image description](img_main_menu.png)
 
+
 Selection any option will prompt the user to
 enter their grades according to the instruction.
 ![image description](img_input.png)
+
 
 The proper inputs can be found on the Canvas CS25
 grades page. The table from the image is all
 the way at the bottom.
 ![image description](img_canvas.png)
 
+
 With the proper inputs, the user can double
 check them by choosing "View current grade."
 ![image description](img_grade.png)
+
 
 Furthermore, the program can calculate
 the minimum average grade you will need
@@ -56,6 +64,7 @@ to get ace the class. One option determines
 what submitted but ungraded assignments need
 to score.
 ![image description](img_ungraded.png)
+
 
 Another option calculates what ungraded and
 future assignments need to score. Future
