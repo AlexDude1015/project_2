@@ -6,10 +6,10 @@
 #define MY_GRADE_H
 #include "shared_libraries.h"
 
-struct my_grade
+struct My_grade
 {
-    //Assignment category
-    category category;
+    //Assignment Category
+    Category category;
     //The current aggregate graded points of a category
     double current_points = -1;
     //The maximum graded points that could be earned

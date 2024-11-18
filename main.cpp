@@ -6,7 +6,7 @@
 int main()
 {
     const int ARRAY_SIZE = 4;
-    std::unique_ptr<my_grade[]> grades = std::make_unique<my_grade[]>(ARRAY_SIZE);
+    std::unique_ptr<My_grade[]> grades = std::make_unique<My_grade[]>(ARRAY_SIZE);
     bool exit = false;
     bool enter_grade = false;
 
@@ -28,6 +28,7 @@ int main()
             exit = true;
         }
     }
+
     return 0;
 }
 

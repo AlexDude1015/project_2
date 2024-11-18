@@ -5,7 +5,8 @@
 
 namespace Sub_menu
 {
-    void print_required_assignment_scores_for_ungraded_assignments(const std::unique_ptr<my_grade[]>& grades, int const SIZE)
+    //Prints out the grade students need on all ungraded assignments.
+    void print_required_assignment_scores_for_ungraded_assignments(const std::unique_ptr<My_grade[]>& grades, int const SIZE)
     {
         double ratio = Calculate::get_required_ratio_for_ungraded_assignments(grades, SIZE, 0.9);
         std::cout << "╔════════════════════════════════════════════════════════════════════════╗\n";
@@ -21,7 +22,8 @@ namespace Sub_menu
 
     }
 
-    void print_required_assignment_scores_for_future_assignments(const std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    //Prints out the grade students need on all ungraded and future assignments.
+    void print_required_assignment_scores_for_future_assignments(const std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         double ratio = Calculate::get_required_ratio_for_future_assignments(grades, SIZE, 0.9);
         std::cout << "╔════════════════════════════════════════════════════════════════════════╗\n";
@@ -36,7 +38,8 @@ namespace Sub_menu
         }
     }
 
-    void print_current_grade(const std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    //Prints out the student's current grade.
+    void print_current_grade(const std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         std::cout << "╔════════════════════════════════════════════════════════════════════════╗\n";
         std::cout << "║ Grades Entered:                                                        ║\n";
@@ -52,12 +55,13 @@ namespace Sub_menu
         std::cout << "║ " << std::setw(72) << final_grade.str() << "║\n";
     }
 
+    //Prints information that defines certain keywords.
     void print_more_info()
     {
         std::cout << "╔════════════════════════════════════════════════════════════════════════╗\n";
         std::cout << "║ Definitions                                                            ║\n";
         std::cout << "╠════════════════════════════════════════════════════════════════════════╣\n";
-        std::cout << "║ Ungraded assignments is the work that has been turned in but remains   ║\n";
+        std::cout << "║ Ungraded assignments are the work that has been turned in but remains  ║\n";
         std::cout << "║ ungraded                                                               ║\n";
         std::cout << "║                                                                        ║\n";
         std::cout << "║ Projected assignments are assignments that might be issued in the      ║\n";

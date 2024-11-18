@@ -22,14 +22,14 @@ namespace Menu
         std::cout << "║ 4) More info                                                           ║\n";
         std::cout << "║ 5) Exit                                                                ║\n";
         std::cout << "╚════════════════════════════════════════════════════════════════════════╝\n";
-        std::cout << "Choose an option (enter a number): \n";
+        std::cout << "Choose an option (enter a number): ";
         std::cin >> choice;
         std::cin.ignore();
         return int_to_option(choice);
     }
 
     //Receives a menu option and executes the proper functions.
-    void execute(const Option& option, const std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    void execute(const Option& option, const std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         switch (option)
         {
@@ -70,10 +70,8 @@ namespace Menu
         }
     }
 
-
-
     //Prompts users to input their current grades, and stores them in a unique pointer array
-    void input_grades(std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    void input_grades(std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         double earned_grade;
         double max_grade;

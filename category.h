@@ -6,7 +6,8 @@
 #define CATEGORY_H
 #include "shared_libraries.h"
 
-struct category
+//Stores the properties of each assignment category
+struct Category
 {
     //Name of the category
     std::string name;

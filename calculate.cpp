@@ -6,7 +6,7 @@
 namespace Calculate
 {
     //Returns the user's grade percentage * 100
-    double get_current_grade(const std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    double get_current_grade(const std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         double total_earned = 0;
         double total_available = 0;
@@ -19,7 +19,7 @@ namespace Calculate
     }
 
     //Returns the sum of your points across all categories of assignments
-    double add_all_earned_points(const std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    double add_all_earned_points(const std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         double total_earned = 0;
         for (int i = 0; i < SIZE; i++)
@@ -30,7 +30,7 @@ namespace Calculate
     }
 
     //Returns the total points available across all categories of assignments
-    double add_all_available_points(const std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    double add_all_available_points(const std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         double total_available = 0;
         for (int i = 0; i < SIZE; i++)
@@ -41,7 +41,7 @@ namespace Calculate
     }
 
     //Returns the total projected points available across all categories of assignments
-    double add_all_projected_available_points(const std::unique_ptr<my_grade[]>& grades, const int SIZE)
+    double add_all_projected_available_points(const std::unique_ptr<My_grade[]>& grades, const int SIZE)
     {
         double total_available = 0;
         for (int i = 0; i < SIZE; i++)
@@ -52,7 +52,7 @@ namespace Calculate
     }
 
     //Returns the total ungraded points available across all categories of assignments
-    double add_all_ungraded_available_points(const std::unique_ptr<my_grade[]>& grades, int SIZE)
+    double add_all_ungraded_available_points(const std::unique_ptr<My_grade[]>& grades, int SIZE)
     {
         double total_ungraded = 0;
         for (int i = 0; i < SIZE; i++)
@@ -63,7 +63,7 @@ namespace Calculate
     }
 
     //Calculates the required score for subsequent assignments and returns a ratio. (Ratio * Max Pointers = Required Grade for A)
-    double get_required_ratio_for_future_assignments(const std::unique_ptr<my_grade[]>& grades, const int SIZE, double letter_grade)
+    double get_required_ratio_for_future_assignments(const std::unique_ptr<My_grade[]>& grades, const int SIZE, double letter_grade)
     {
         double earned_points = add_all_earned_points(grades, SIZE);
         double available_points = add_all_available_points(grades, SIZE);
@@ -72,7 +72,7 @@ namespace Calculate
     }
 
     //Calculates the required score for ungraded assignments and returns a ratio.
-    double get_required_ratio_for_ungraded_assignments(const std::unique_ptr<my_grade[]>& grades, const int SIZE, double letter_grade)
+    double get_required_ratio_for_ungraded_assignments(const std::unique_ptr<My_grade[]>& grades, const int SIZE, double letter_grade)
     {
         double earned_points = add_all_earned_points(grades, SIZE);
         double available_points = add_all_available_points(grades, SIZE);

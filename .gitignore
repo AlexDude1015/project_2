@@ -32,8 +32,9 @@
 *.app
 
 #misc
-*.txt
+CMakeLists.txt
 /.idea
 *.DS_Store
 cmake-build-debug/
+cmake-build-default/
 .idea
